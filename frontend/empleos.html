@@ -21,15 +21,16 @@
             DevJobs
         </h1>
 
+        <div class="navegacion">
         <nav>
             <a href="./index.html">Inicio</a>
             <a href="#">Empleos</a>
             <a href="#">Empresas</a>
             <a href="#">Salarios</a>
         </nav>
+        </div>
 
-
-        <div>
+        <div class="botones">
             <button class="cv">Subir CV</button>
             <button class="perfil"></button>
         </div>
@@ -43,7 +44,7 @@
 
         <section>
             <form role="search">
-                <div>
+                <div class="search-bar">
                 <label for="search-bar">
                 <svg  fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z">
@@ -52,64 +53,105 @@
                 </label>
                 <input id="search-bar" type="text" placeholder="Buscar empleos por titulo, habilidad o empresa...">
                 </div>
+
+                <div class="selectores">
+                    <select name="tecnologia">
+                        <option value="">Tecnología</option>
+                        <option value="javascript">JS</option>
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                        <option value="csharp">C#</option>
+                        <option value="php">PHP</option>
+                    </select>
+
+                    <select name="ubi" >
+                        <option value="">Ubicación</option>
+                        <option value="remoto">Remoto</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="hibrido">Híbrido</option>
+                    </select>
+
+                    <select name="tipocontra" >
+                        <option value="">Tipo de contrato</option>
+                        <option value="fulltime">Tiempo completo</option>
+                        <option value="parttime">Medio tiempo</option>
+                        <option value="freelance">Freelance</option>
+                    </select>
+
+                    <select name="lvlexp" >
+                        <option value="">Nivel de experiencia</option>
+                        <option value="junior">Junior</option>
+                        <option value="midlevel">Nivel medio</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                </div>
             </form>
-            <div class="selectores">
-            <select name="tecnologia">
-                <option value="">Tecnología</option>
-                <option value="javascript">JS</option>
-                <option value="python">Python</option>
-                <option value="java">Java</option>
-                <option value="csharp">C#</option>
-                <option value="php">PHP</option>
-            </select>
-
-            <select name="ubi" >
-                <option value="">Ubicación</option>
-                <option value="remoto">Remoto</option>
-                <option value="presencial">Presencial</option>
-                <option value="hibrido">Híbrido</option>
-            </select>
-
-            <select name="tipocontra" >
-                <option value="">Tipo de contrato</option>
-                <option value="fulltime">Tiempo completo</option>
-                <option value="parttime">Medio tiempo</option>
-                <option value="freelance">Freelance</option>
-            </select>
-
-            <select name="lvlexp" >
-                <option value="">Nivel de experiencia</option>
-                <option value="junior">Junior</option>
-                <option value="midlevel">Nivel medio</option>
-                <option value="senior">Senior</option>
-            </select>
-            </div>
+            
         </section>
 
         
-        <section>
+        <section class="empleos">
             <h2>Resultados de busqueda</h2>
+                <div>
+                <article>
+                    <div class="contenido">
+                        <div class="fila-superior">
+                            <h3>Ingeniero de Software</h3>
+                            <button>Aplicar</button>
+                        </div>
+                        <p class="p-subtitulo">Tech Solutions Inc. | Remoto</p>
+                        <p>Buscamos un ingeniero de software con experiencia en desarrollo web y conocimientos en JavaScript, React y Node.js. El candidato ideal debe ser capaz de trabajar en equipo y tener buenas habilidades de comunicación.</p>
+                    </div>
+                </article>
 
-            <article>
-                <h3>Desarrollador Frontend</h3>
-                <p>Empresa XYZ - Remoto</p>
-                <p>Publicado hace 2 días</p>
-            </article>
+                <article>
+                    <div class="contenido">
+                        <div class="fila-superior">
+                            <h3>Analista de Datos</h3>
+                            <button>Aplicar</button>
+                        </div>
+                        <p class="p-subtitulo">Data Driven Co. | Ciudad de México</p>
+                        <p> Estamos buscando un analista de datos con experiencia en el manejo de grandes conjuntos de datos y herramientas de visualización. Se requiere conocimiento en SQL, Python y R.</p>
+                    </div>
+                </article>
 
-            <article>
-                <h3>Desarrollador Backend</h3>
-                <p>Empresa ABC - Presencial</p>
-                <p>Publicado hace 5 días</p>
-            </article>
+                <article>
+                    <div class="contenido">
+                        <div class="fila-superior">
+                            <h3>Desarrollador de Aplicaciones Móviles</h3> 
+                             <button>Aplicar</button>
+                        </div>
+                        <p class="p-subtitulo">Mobile Apps Ltd. | Guadalajara</p>
+                        <p>uscamos un desarrollador de aplicaciones móviles con experiencia en iOS y/o Android. El candidato debe tener conocimientos en Swift, Kotlin y el desarrollo de interfaces de usuario.</p>
+                    </div>
+                    
+                </article>
 
-            <article>
-                <h3>Desarrollador Fullstack</h3>
-                <p>Empresa 123 - Híbrido</p>
-                <p>Publicado hace 1 semana</p>
-            </article>
-
-
+                   <article>
+                    <div class="contenido">
+                        <div class="fila-superior">
+                            <h3>Ingeniero de DevOps</h3> 
+                             <button>Aplicar</button>
+                        </div>
+                        <p class="p-subtitulo">Cloud Services SA | Remoto</p>
+                        <p> Estamos buscando un ingeniero de DevOps con experiencia en la gestión de infraestructuras en la nube, automatización de procesos y herramientas de integración continua. Se requiere conocimiento en AWS, Azure o GCP.</p>
+                    </div>
+                    
+                </article>
+                </div>
         </section>
+
+        <footer>
+            <nav>
+                <a href="#"><</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">></a>
+            </nav>
+        </footer>
 
     </main>
 </body>
