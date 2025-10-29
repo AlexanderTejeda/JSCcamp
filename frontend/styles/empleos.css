@@ -266,3 +266,35 @@ form input[type="text"] {
         outline: none;
     }
 }
+
+.paginacion {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem 0;
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    a {
+        color: var(--text-primary);
+        text-decoration: none;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.25rem;
+        transition: background-color 0.2s, color 0.2s;
+
+        &:hover, &:focus {
+            background-color: var(--primary-hover);
+            color: var(--text-primary);
+            outline: none;
+        }
+
+        &.is-active {
+            background-color: var(--primary-light);
+            color: var(--text-primary);
+            pointer-events: none;
+        }
+    }
+}
